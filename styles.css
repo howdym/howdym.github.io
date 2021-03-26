@@ -1,0 +1,126 @@
+/* General styling */
+
+svg { 
+    position: absolute;
+    top: 0; 
+    left: 0;
+    z-index: 1;
+    width: 100%; 
+}
+
+.content { 
+    position: relative;
+    z-index: 99;
+    margin: 0 auto;
+    width: 75%; 
+}
+
+.block { 
+    margin-top: 10px;
+    border: solid 2px black; 
+    background-color: white;
+    padding: 10px;
+    font-size: larger;
+}
+
+.block:hover { 
+    box-shadow: 0 2px 2px black;
+    transition: all 0.2s linear;  
+}
+
+nav { 
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 2px black; 
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+nav a { 
+    font-size: large;
+    text-decoration: none; 
+    color: black;
+}
+
+nav a:hover, nav a.curr { 
+    font-size: large;
+    text-decoration: underline; 
+    color: black;
+}
+
+h1 { 
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 0px; 
+    position: relative; 
+    top: -10px;
+}
+
+h3 { 
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    font-size: x-large;
+}
+
+img { 
+    margin: 0px 10px 0px 10px;
+}
+
+.transparent-row { 
+    display: flex; 
+    justify-content: space-between;
+}
+
+.transparent-row #place { 
+    flex: 1 1 0px;
+}
+
+#note {
+    font-size: smaller;
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* Styling for additional about me */ 
+.nav-buttons { 
+    display: flex; 
+    justify-content: flex-end
+}
+
+.nav-buttons a, a#note { 
+    margin-left: 10px;
+    font-size: small; 
+    color: black;
+    text-decoration: none; 
+    width: fit-content; 
+    height: fit-content;
+}
+
+.contact-buttons { 
+    display: flex; 
+    align-items: flex-end;
+}
+
+.contact-buttons a { 
+    margin-right: 5px;
+}
+
+.button-grouper { 
+    display: flex; 
+    justify-content: space-between;
+}
+
+/* Styling for work experience */ 
+
+div #experience { 
+    display: flex; 
+    justify-content: space-between;
+}
+
+div #contact { 
+    width: fit-content;
+}
