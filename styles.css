@@ -1,4 +1,6 @@
-/* General styling */
+html { 
+    scroll-behavior: smooth;
+}
 
 svg { 
     position: absolute;
@@ -8,24 +10,20 @@ svg {
     width: 100%; 
 }
 
-.content { 
-    position: relative;
-    z-index: 99;
-    margin: 0 auto;
-    width: 75%; 
+h1 { 
+    text-align: center;
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 0px; 
+    position: relative; 
+    top: -10px;
 }
 
-.block { 
-    margin-top: 10px;
-    border: solid 2px black; 
-    background-color: white;
+h3 { 
+    width: fit-content;
+    height: fit-content;
     padding: 10px;
-    font-size: larger;
-}
-
-.block:hover { 
-    box-shadow: 0 2px 2px black;
-    transition: all 0.2s linear;  
+    font-size: x-large;
 }
 
 nav { 
@@ -50,24 +48,42 @@ nav a:hover, nav a.curr {
     color: black;
 }
 
-h1 { 
-    text-align: center;
-    font-weight: 700;
-    font-size: 2.5em;
-    margin-bottom: 0px; 
-    position: relative; 
-    top: -10px;
-}
-
-h3 { 
-    width: fit-content;
-    height: fit-content;
-    padding: 10px;
-    font-size: x-large;
-}
-
 img { 
     margin: 0px 10px 0px 10px;
+}
+
+button.block { 
+    margin-left: 10px;
+    font-size: small;
+    color: black;
+    text-decoration: none;
+    width: fit-content;
+    height: fit-content;
+    font-weight: normal ! important;
+}
+
+button:focus { 
+    outline: none ! important;
+}
+
+.content { 
+    position: relative;
+    z-index: 99;
+    margin: 0 auto;
+    width: 75%; 
+}
+
+.block { 
+    margin-top: 10px;
+    border: solid 2px black; 
+    background-color: white;
+    padding: 10px;
+    font-size: larger;
+}
+
+.block:hover { 
+    box-shadow: 0 2px 2px black;
+    transition: all 0.2s linear;  
 }
 
 .transparent-row { 
@@ -79,20 +95,13 @@ img {
     flex: 1 1 0px;
 }
 
-#note {
-    font-size: smaller;
-    font-weight: normal;
-    font-style: italic;
-}
-
-/* Styling for additional about me */ 
 .nav-buttons { 
     display: flex; 
-    justify-content: flex-end
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
-.nav-buttons a, a#note { 
-    margin-left: 10px;
+.link-buttons a, a#note { 
     font-size: small; 
     color: black;
     text-decoration: none; 
@@ -100,12 +109,16 @@ img {
     height: fit-content;
 }
 
-.contact-buttons { 
+.link-buttons a i { 
+    font-size: x-large;
+}
+
+.link-buttons { 
     display: flex; 
     align-items: flex-end;
 }
 
-.contact-buttons a { 
+.link-buttons a { 
     margin-right: 5px;
 }
 
@@ -114,9 +127,31 @@ img {
     justify-content: space-between;
 }
 
-/* Styling for work experience */ 
+.fadeIn {
+    animation: appear 1s linear forwards;
+}
 
-div #experience { 
+.fadeOut {
+    animation: disappear 1s linear forwards;
+}
+
+@keyframes appear {
+    0% { opacity: 0; }
+    100% { opacity: 1; } 
+}
+
+@keyframes disappear {
+    0% { opacity: 1; }
+    100% { opacity: 0; } 
+}
+
+#note {
+    font-size: smaller;
+    font-weight: normal;
+    font-style: italic;
+}
+
+div #header { 
     display: flex; 
     justify-content: space-between;
 }

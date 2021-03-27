@@ -11,7 +11,7 @@
 
     <body>
         <div class="content">
-            <h1 id="top">Marc Jiang</h1> 
+            <h1>Marc Jiang</h1> 
             <nav>
                 <a href="index.html" class="curr">Home</a> 
                 <a href="resume.html">Work Experience</a> 
@@ -19,134 +19,144 @@
                 <a href="contact.html">Contact</a>
             </nav>
 
-            <h3 class="block">About Me</h3>
+            <div class="fadeIn" id="top">
+                <h3 class="block">About Me</h3>
 
-            <div class="transparent-row">
-                <div class="block"> 
-                    <img src="about-picture.png" height="450" width="auto"/> 
-                </div>
+                <div class="transparent-row">
+                    <div class="block"> 
+                        <img src="about-picture.png" height="450" width="auto"/> 
+                    </div>
 
-                <div class="block"> 
-                    &nbsp;&nbsp;&nbsp;&nbsp; My name is Marc Jiang, and I am a junior at Northwestern University 
-                    studying Computer Science in the BS/MS program. I currently work at the 
-                    <a href="tiilt.northwestern.edu">TIILT Lab</a> at Northwestern University. My goal is to improve 
-                    the daily lives of people using computer science. I am interested in doing so through the psychological, 
-                    educational, and/or medical field. I am also interested in doing so by contributing on products that 
-                    people commonly use. For example, I will be interning at Facebook this summer and hopefully will be 
-                    working on their application. As of now, my goal is to learn and gain as much skill and work experience 
-                    as possible so that in the future, I can contribute to projects I deeply care about at my fullest capacity. 
+                    <div class="block"> 
+                        &nbsp;&nbsp;&nbsp;&nbsp; My name is Marc Jiang, and I am a junior at Northwestern University 
+                        studying Computer Science in the BS/MS program. I currently work at the 
+                        <a href="tiilt.northwestern.edu">TIILT Lab</a> at Northwestern University. My goal is to improve 
+                        the daily lives of people using computer science. I am interested in doing so through the psychological, 
+                        educational, and/or medical field. I am also interested in doing so by contributing on products that 
+                        people commonly use. For example, I will be interning at Facebook this summer and hopefully will be 
+                        working on their application. As of now, my goal is to learn and gain as much skill and work experience 
+                        as possible so that in the future, I can contribute to projects I deeply care about at my fullest capacity. 
 
-                    <p></p> 
+                        <p></p> 
 
-                    &nbsp;&nbsp;&nbsp;&nbsp; My hobbies are running, basketball, and watching movies. I am currently trying to 
-                    teach myself guitar and cooking. I like spending time with others and getting to know them better. My favorite 
-                    food, candy, and snack is instant noodles, sour patches, and hot cheetoes. My favorite restuarant is Chipotle 
-                    (I used to work there!), and my go to order is the chicken bowl. Some of my favorite artists are Lauv, LANY, 
-                    Ed Sheeran, Chance the Rapper, and Quinn XCII. I am always looking for song suggestions. 
+                        &nbsp;&nbsp;&nbsp;&nbsp; My hobbies are running, basketball, and watching movies. I am currently trying to 
+                        teach myself guitar and cooking. I like spending time with others and getting to know them better. My favorite 
+                        food, candy, and snack is instant noodles, sour patches, and hot cheetoes. My favorite restuarant is Chipotle 
+                        (I used to work there!), and my go to order is the chicken bowl. Some of my favorite artists are Lauv, LANY, 
+                        Ed Sheeran, Chance the Rapper, and Quinn XCII. I am always looking for song suggestions. 
 
-                    <p></p> 
-                    <br>
+                        <p></p> 
+                        <br>
 
-                    <i>Love your neighbor as yourself.</i>
-                    
-                    <div class="button-grouper">
-                        <div class="contact-buttons"> 
-                            <a href="mailto:marcjiang2022@u.northwestern.edu">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/marc-jiang-087286180/"> 
-                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                            </a>
-                            <a href="https://github.com/howdym/">
-                                <i class="fa fa-github" aria-hidden="true"></i>
-                            </a>
-                        </div>
+                        <i>Love your neighbor as yourself.</i>
+                        
+                        <div class="button-grouper">
+                            <div class="link-buttons"> 
+                                <a href="mailto:marcjiang2022@u.northwestern.edu">
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/marc-jiang-087286180/"> 
+                                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+                                <a href="https://github.com/howdym/">
+                                    <i class="fa fa-github" aria-hidden="true"></i>
+                                </a>
+                            </div>
 
-                        <div class="nav-buttons"> 
-                            <a href="#education" class="block">Education</a>
-                            <a href="#skills" class="block">Skills</a>
+                            <div class="nav-buttons"> 
+                                <button class="block" value="top,education" onClick="toggle(this)">Education</button>
+                                <button class="block" value="top,skills" onClick="toggle(this)">Skills</button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div class="fadeOut" id="education">
+                <h3 class="block">Education</h3>
 
-            <p></p>
+                <div class="transparent-row">
+                    <div class="block" id="place"> 
+                        <div> <b>Northwestern University</b> (Evanston, IL.) </div>
+                        <div> BS/MS in Computer Science </div>  
+                        <div> Expected Graduation: June 2022 </div>  
+                        <div> GPA: 3.96/4.00 </div>            
+                    </div>
 
-            <div class="transparent-row">
-                <h3 class="block" id="education">Education</h3>
-                <a class="block" id="note" href="#top">Back to Top</a>
+                    <div class="block" id="place"> 
+                        <div> <b>Whitney Young</b> (Chicago, IL.) </div> 
+                        <div> High School Dipolma </div>
+                        <div> June 2018 </div>
+                        <div> GPA: 5.16/6.00 </div>                
+                    </div>
+                    <div class="block" id="place">
+                        <div> <b>University of Chicago</b> (Chicago, IL.) </div> 
+                        <div class="button-grouper">
+                            <div id="place">                                                                                           
+                                <div> <a href="https://summer.uchicago.edu/course/fundamentals-computer-programming-i-swift-and-ios-application-development">Summer Course</a> </div>
+                                <div> Summer 2017 </div>
+                                <div> GPA: 4.00/4.00 </div>             
+                            </div>
+                            <div class="nav-buttons"> 
+                                <button class="block" value="education,top" onClick="toggle(this)">About Me</button>
+                                <button class="block" value="education,skills" onClick="toggle(this)">Skills</button>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="transparent-row">
-                <div class="block" id="place"> 
-                    <div> <b>Northwestern University</b> (Evanston, IL.) </div>
-                    <div> BS/MS in Computer Science </div>  
-                    <div> Expected Graduation: June 2022 </div>  
-                    <div> GPA: 3.96/4.00 </div>            
-                </div>
+            <div class="fadeOut" id="skills">
+                <h3 class="block">Skills</h3>
 
-                <div class="block" id="place"> 
-                    <div> <b>Whitney Young</b> (Chicago, IL.) </div> 
-                    <div> High School Dipolma </div>
-                    <div> June 2018 </div>
-                    <div> GPA: 5.16/6.00 </div>                
-                </div>
+                <div class="transparent-row">
+                    <div class="block" id="place"> 
+                        <div> <b>Full</b> </div>
+                        <ul> 
+                            <li>Python (Pandas, Numpy, Scipy)</li>
+                            <li>Java</li>
+                            <li>Scheme (DrRacket)</li>
+                        </ul>
+                    </div>
 
-                <div class="block" id="place">                                                                                           
-                    <div> <b>University of Chicago</b> (Chicago, IL.) </div> 
-                    <div> <a href="https://summer.uchicago.edu/course/fundamentals-computer-programming-i-swift-and-ios-application-development">Summer Course</a> </div>
-                    <div> Summer 2017 </div>
-                    <div> GPA: 4.00/4.00 </div>                
-                </div>
-            </div>
+                    <div class="block" id="place"> 
+                        <div> <b>Working</b> </div> 
+                        <ul> 
+                            <li>C++</li>
+                            <li>C# (Unity)</li>
+                            <li>Linux (RHEL, Antergos)</li>
+                            <li>Unix</li>
+                            <li>Assembly</li>
+                            <li>OpenCV</li>
+                            <li>JavaScript (D3)</li>
+                            <li>HTML/CSS</li>
+                        </ul>
+                    </div>
 
-            <p></p>
-
-            <div class="transparent-row"> 
-                <h3 class="block" id="skills">Skills</h3>
-                <a class="block" id="note" href="#top">Back to Top</a>
-            </div>
-
-            <div class="transparent-row">
-                <div class="block" id="place"> 
-                    <div> <b>Full</b> </div>
-                    <ul> 
-                        <li>Python (Pandas, Numpy, Scipy)</li>
-                        <li>Java</li>
-                        <li>Scheme (DrRacket)</li>
-                    </ul>
-                </div>
-
-                <div class="block" id="place"> 
-                    <div> <b>Working</b> </div> 
-                    <ul> 
-                        <li>C++</li>
-                        <li>C# (Unity)</li>
-                        <li>Linux (RHEL, Antergos)</li>
-                        <li>Unix</li>
-                        <li>Assembly</li>
-                        <li>OpenCV</li>
-                        <li>JavaScript (D3)</li>
-                        <li>HTML/CSS</li>
-                    </ul>
-                </div>
-
-                <div class="block" id="place">                                                                                           
-                    <div> <b>Beginner</b> </div> 
-                    <ul> 
-                        <li>PyTorch</li>
-                        <li>PDDL</li>
-                        <li>MATLAB</li>
-                        <li>Haskell</li>
-                        <li>C</li>
-                        <li>Rust</li>
-                        <li>SQL</li>
-                        <li>Arduino</li>
-                        <li>Amazon Echo</li>
-                        <li>AWS Lambda</li>
-                        <li>Swift</li>
-                    </ul>
+                    <div class="block" id="place">                                                                                           
+                        <div> <b>Beginner</b> </div> 
+                        <div class="button-grouper">
+                            <div id="place">
+                                <ul> 
+                                    <li>PyTorch</li>
+                                    <li>PDDL</li>
+                                    <li>MATLAB</li>
+                                    <li>Haskell</li>
+                                    <li>C</li>
+                                    <li>Rust</li>
+                                    <li>SQL</li>
+                                    <li>Arduino</li>
+                                    <li>Amazon Echo</li>
+                                    <li>AWS Lambda</li>
+                                    <li>Swift</li>
+                                </ul>
+                            </div>
+                            <div class="nav-buttons"> 
+                                <button class="block" value="skills,top" onClick="toggle(this)">About Me</button>
+                                <button class="block" value="skills,education" onClick="toggle(this)">Education</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
