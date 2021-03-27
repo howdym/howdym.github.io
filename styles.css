@@ -10,6 +10,10 @@ svg {
     width: 100%; 
 }
 
+p { 
+    margin-block-start: 0em ! important;
+}
+
 h1 { 
     text-align: center;
     font-weight: 700;
@@ -81,7 +85,7 @@ button:focus {
     font-size: larger;
 }
 
-.block:hover { 
+.block:hover, button:focus { 
     box-shadow: 0 2px 2px black;
     transition: all 0.2s linear;  
 }

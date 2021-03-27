@@ -6,35 +6,37 @@
 
     <body>
         <div class="content">
-            <h1 id="top">Marc Jiang</h1> 
-            <nav>
-                <a href="index.html">Home</a> 
-                <a href="resume.html">Work Experience</a> 
-                <a href="projects.html">Projects and Papers</a> 
-                <a href="contact.html" class="curr">Contact</a>
+            <h1 role="banner">Marc Jiang</h1> 
+            <nav aria-label="Main Navigation" role="navigation">
+                <a href="index.html" aria-label="Go to Home Page">Home</a> 
+                <a href="resume.html" aria-label="Go to Work Experience Page">Work Experience</a> 
+                <a href="projects.html" aria-label="Go to Projects and Papers Page">Projects and Papers</a> 
+                <a href="contact.html" class="curr" aria-current="page" aria-label="Go to Contact Page">Contact</a>
             </nav>
 
-            <div class=fadeIn>
-                <h3 class="block">Contact</h3>
+            <main role="main">
+                <div class=fadeIn>
+                    <h3 class="block">Contact</h3>
 
-                <div class="block" id="contact"> 
-                    <div>
-                        <b>Gmail:</b> marcjiang2022@u.northwestern.edu
-                    </div>
+                    <div class="block" id="contact"> 
+                        <div>
+                            <b>Gmail:</b> <a href="mailto:marcjiang2022@u.northwestern.edu" aria-label="My Email">marcjiang2022@u.northwestern.edu</a>
+                        </div>
 
-                    <div>
-                        <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/marc-jiang-087286180/">Click Here</a>
-                    </div>
+                        <div>
+                            <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/marc-jiang-087286180/" aria-label="My LinkedIn">Click Here</a>
+                        </div>
 
-                    <div>
-                        <b>Github:</b> <a href="https://github.com/howdym/">Click Here</a>
-                    </div>
+                        <div>
+                            <b>Github:</b> <a href="https://github.com/howdym/" aria-label="My Github">Click Here</a>
+                        </div>
 
-                    <div>
-                        <b>Resume:</b> <a href="https://drive.google.com/file/d/1oXpaP36edUJBJIzIgXsB36E7fRgF4DOk/view?usp=sharing">Click Here</a>
+                        <div>
+                            <b>Resume:</b> <a href="https://drive.google.com/file/d/1oXpaP36edUJBJIzIgXsB36E7fRgF4DOk/view?usp=sharing" aria-label="My Resume">Click Here</a>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </main>
         </div>
 
         <svg id="background"></svg>

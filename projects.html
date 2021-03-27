@@ -6,183 +6,185 @@
 
     <body>
         <div class="content">
-            <h1>Marc Jiang</h1> 
-            <nav>
-                <a href="index.html">Home</a> 
-                <a href="resume.html">Work Experience</a> 
-                <a href="projects.html" class="curr">Projects and Papers</a> 
-                <a href="contact.html">Contact</a>
+            <h1 role="banner">Marc Jiang</h1> 
+            <nav aria-label="Main Navigation" role="navigation">
+                <a href="index.html" aria-label="Go to Home Page">Home</a> 
+                <a href="resume.html" aria-label="Go to Work Experience Page">Work Experience</a> 
+                <a href="projects.html" class="curr" aria-current="page" aria-label="Go to Projects and Papers Page">Projects and Papers</a> 
+                <a href="contact.html" aria-label="Go to Contact Page">Contact</a>
             </nav>
 
-            <div class=fadeIn id="top">
-                <h3 class="block">Featured Projects</h3>
+            <main role="main">
+                <div class=fadeIn id="top">
+                    <h3 class="block">Featured Projects</h3>
 
-                <div class="transparent-row"> 
-                    <div class="block" id="place"> 
-                        <b>Tangicraft</b>
+                    <div class="transparent-row"> 
+                        <div class="block" id="place"> 
+                            <p>
+                                <b>Tangicraft</b>
+                            </p>
 
-                        <p></p>
+                            <p>
+                                Using OpenCV and Mediapipe Hands to detect hand motion, hand gestures, 
+                                and block locations, we are able to detect when and where a user is 
+                                grabbing and releasing a block. 
+                            </p>
 
-                        Using OpenCV and Mediapipe Hands to detect hand motion, hand gestures, 
-                        and block locations, we are able to detect when and where a user is 
-                        grabbing and releasing a block. 
+                            <p>
+                                We intend to use this block movement detection as an extension to 
+                                <a href="https://tiilt.northwestern.edu/projects/" aria-label="TIILT Project Page">Multicraft</a>, 
+                                which is a project that provides multi-modal methods of playing Minecraft 
+                                such as using gaze or speech as ways of input to play Minecraft. This 
+                                block movement detection will be another mode of playing Minecraft, by 
+                                using tangible blocks to build structures in real life that can be 
+                                replicated in Minecraft via this code.
+                            </p> 
 
-                        <p></p>
+                            <p>
+                                This provides additional affordances to those who may have trouble playing 
+                                Minecraft in the traditional modes, such as those in the BVI community and 
+                                younger individuals. 
+                            </p> 
 
-                        We intend to use this block movement detection as an extension to 
-                        <a href="https://tiilt.northwestern.edu/projects/">Multicraft</a>, 
-                        which is a project that provides multi-modal methods of playing Minecraft 
-                        such as using gaze or speech as ways of input to play Minecraft. This 
-                        block movement detection will be another mode of playing Minecraft, by 
-                        using tangible blocks to build structures in real life that can be 
-                        replicated in Minecraft via this code.
+                            <p>
+                                Next steps involve beginning to center our work with the communities we are 
+                                trying to work with through this project, redefine our positionality as 
+                                researchers, integrating this code into Multicraft, and refining the heuristics 
+                                and algorithm used in this code.
+                            </p>
 
-                        <p></p> 
-
-                        This provides additional affordances to those who may have trouble playing 
-                        Minecraft in the traditional modes, such as those in the BVI community and 
-                        younger individuals. 
-
-                        <p></p> 
-
-                        Next steps involve beginning to center our work with the communities we are 
-                        trying to work with through this project, redefine our positionality as 
-                        researchers, integrating this code into Multicraft, and refining the heuristics 
-                        and algorithm used in this code.
-
-                        <p></p>
-
-                        <div class="link-buttons"> 
-                            <a href="https://github.com/howdym/TangiCraft/tree/standarized" class="block">Code</a>
+                            <div class="link-buttons"> 
+                                <a href="https://github.com/howdym/TangiCraft/tree/standarized" class="block" aria-label="Code to Tangicraft">Code</a>
+                            </div>
+                        </div>
+                        <div class="block"> 
+                            <img src="tangicraft.gif" alt="Demo of Tangicraft"/>
                         </div>
                     </div>
-                    <div class="block"> 
-                        <img src="tangicraft.gif"/>
+
+                    <br>
+
+                    <div class="transparent-row"> 
+                        <div class="block"> 
+                            <img src="slackSearch.gif" alt="Demo of Slack Search"/>
+                        </div>
+                        <div class="block">                                
+                            <p>
+                                <b>Slack Search</b>
+                            </p>
+
+                            <p>
+                                This was a group project made by my team for a class. The objective of this 
+                                project was to create a way for users to get their questions answered without 
+                                having to leave Slack, a communication application commonly used by students 
+                                and professionals.
+                            </p>
+        
+                            <p>
+                                To approach this, we created a bot that can detect when someone is asking a question. 
+                                If the question is about the definition of word, the bot takes the context of the 
+                                conversation and returns a Wikipedia article with the definition. If the question is 
+                                about where a location is, when an event occurred, or a description of what something is,
+                                the bot returns a response from the Encyclopedia Brittanica. 
+                            </p>
+
+                            <p>
+                                My contribution to this project was mainly creating the context extraction, question 
+                                detection algorithm, and ":query" command. 
+                            </p>
+
+                            <div class="button-grouper">
+                                <div class="link-buttons"> 
+                                    <a href="https://github.com/tkkwon1998/cs338-slack-search" class="block" aria-label="Code to Slack Search">Code</a>
+                                </div>
+                                <div role="group" aria-labelledby="Navigation Buttons" class="nav-buttons"> 
+                                    <button class="block" value="top,special" onClick="toggle(this)" aria-label="Go to Special Mentions">Special Mentions</button>
+                                    <button class="block" value="top,papers" onClick="toggle(this)" aria-label="Go to Papers">Papers</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <p></p>
+                <div class="fadeOut" id="special">
+                    <h3 class="block">Special Mentions</h3>
 
-                <div class="transparent-row"> 
                     <div class="block"> 
-                        <img src="slackSearch.gif"/>
+                        <div id="header">
+                            <b>Turret Dodgeball</b>
+                            February 2019 - March 2019
+                        </div>
+                        <ul>
+                            <li>
+                                Implemented key, render, and event handlers in C++ for a game where players 
+                                can earn money to set down/upgrade turrets, which then fire dodgeballs at 
+                                the opposing team
+                            </li>
+                            <li> 
+                                Developed physics algorithms to fire the dodgeballs along a trajectory and 
+                                collision detection for when it hits a person or wall while maintaining game 
+                                state by tracking money, location of players, turrets, and dodgeballs, and 
+                                lives of players
+                            </li>
+                        </ul>
+
+                        <div class="link-buttons"> 
+                            <a href="https://github.com/howdym/Turret-Dodgeball" class="block" aria-label="Code to Turret Dodgeball">Code</a>
+                        </div>
                     </div>
+
                     <div class="block"> 
-                        <b>Slack Search</b>
-                        
-                        <p></p>
-
-                        This was a group project made by my team for a class. The objective of this 
-                        project was to create a way for users to get their questions answered without 
-                        having to leave Slack, a communication application commonly used by students 
-                        and professionals.
-
-                        <p></p>
-
-                        To approach this, we created a bot that can detect when someone is asking a question. 
-                        If the question is about the definition of word, the bot takes the context of the 
-                        conversation and returns a Wikipedia article with the definition. If the question is 
-                        about where a location is, when an event occurred, or a description of what something is,
-                        the bot returns a response from the Encyclopedia Brittanica. 
-                        
-                        <p></p>
-
-                        My contribution to this project was mainly creating the context extraction, question 
-                        detection algorithm, and ":query" command. 
-
-                        <p></p>
+                        <div id="header">
+                            <b>Divvy Bike Locator</b>
+                            September 2019 - September 2019
+                        </div>
+                        <ul>
+                            <li>
+                                Created a C++ executable to edit, remove, and add items onto a MySQL database 
+                                which contains the Divvy Bike stations' address, location, id, and capacity 
+                                using X DevAPI
+                            </li>
+                            <li> 
+                                Implemented a feature that outputs a MySQL data onto an XML file, which was 
+                                then displayed on a map from an HTML file with Google Maps API, JavaScript, 
+                                and JQuery through a local server using Python and Bottle 
+                            </li>
+                        </ul>
 
                         <div class="button-grouper">
                             <div class="link-buttons"> 
-                                <a href="https://github.com/tkkwon1998/cs338-slack-search" class="block">Code</a>
+                                <a href="https://github.com/howdym" class="block" aria-label="Link to Github">See More</a>
+                                <a href="https://github.com/howdym/bikeLocator" class="block" aria-label="Code to Bike Locator">Code</a>
                             </div>
-                            <div class="nav-buttons"> 
-                                <button class="block" value="top,special" onClick="toggle(this)">Special Mentions</button>
-                                <button class="block" value="top,papers" onClick="toggle(this)">Papers</button>
+                            <div role="group" aria-labelledby="Navigation Buttons" class="nav-buttons"> 
+                                <button class="block" value="special,top" onClick="toggle(this)" aria-label="Go to Featured Projects">Featured Projects</button>
+                                <button class="block" value="special,papers" onClick="toggle(this)" aria-label="Go to Papers">Papers</button>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="fadeOut" id="special">
-                <h3 class="block">Special Mentions</h3>
-
-                <div class="block"> 
-                    <div id="header">
-                        <b>Turret Dodgeball</b>
-                        February 2019 - March 2019
-                    </div>
-                    <ul>
-                        <li>
-                            Implemented key, render, and event handlers in C++ for a game where players 
-                            can earn money to set down/upgrade turrets, which then fire dodgeballs at 
-                            the opposing team
-                        </li>
-                        <li> 
-                            Developed physics algorithms to fire the dodgeballs along a trajectory and 
-                            collision detection for when it hits a person or wall while maintaining game 
-                            state by tracking money, location of players, turrets, and dodgeballs, and 
-                            lives of players
-                        </li>
-                    </ul>
-
-                    <div class="link-buttons"> 
-                        <a href="https://github.com/howdym/Turret-Dodgeball" class="block">Code</a>
-                    </div>
-                </div>
-
-                <div class="block"> 
-                    <div id="header">
-                        <b>Divvy Bike Locator</b>
-                        September 2019 - September 2019
-                    </div>
-                    <ul>
-                        <li>
-                            Created a C++ executable to edit, remove, and add items onto a MySQL database 
-                            which contains the Divvy Bike stations' address, location, id, and capacity 
-                            using X DevAPI
-                        </li>
-                        <li> 
-                            Implemented a feature that outputs a MySQL data onto an XML file, which was 
-                            then displayed on a map from an HTML file with Google Maps API, JavaScript, 
-                            and JQuery through a local server using Python and Bottle 
-                        </li>
-                    </ul>
-
-                    <div class="button-grouper">
-                        <div class="link-buttons"> 
-                            <a href="https://github.com/howdym" class="block">See More</a>
-                            <a href="https://github.com/howdym/bikeLocator" class="block">Code</a>
+                <div class="fadeOut" id="papers">
+                    <h3 class="block">Papers</h3>
+                    
+                    <div class="block">
+                        <div id="header">
+                            <b> 
+                                Multicraft: A multimodal interface for supporting and studying 
+                                learning in Minecraft
+                            </b>
+                            HCII2021
                         </div>
-                        <div class="nav-buttons"> 
-                            <button class="block" value="special,top" onClick="toggle(this)">Featured Projects</button>
-                            <button class="block" value="special,papers" onClick="toggle(this)">Papers</button>
+                        <br>
+                        Marcelo Worsley, Kevin Mendoza Tudares, Tim Mwiti, Mitchell Zhen, Marc Jiang
+
+                        <div role="group" aria-labelledby="Navigation Buttons" class="nav-buttons"> 
+                            <button class="block" value="papers,top" onClick="toggle(this)" aria-label="Go to Featured Projects">Featured Projects</button>
+                            <button class="block" value="papers,special" onClick="toggle(this)" aria-label="Go to Special Mentions">Special Mentions</button>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="fadeOut" id="papers">
-                <h3 class="block">Papers</h3>
-                
-                <div class="block">
-                    <div id="header">
-                        <b> 
-                            Multicraft: A multimodal interface for supporting and studying 
-                            learning in Minecraft
-                        </b>
-                        HCII2021
-                    </div>
-                    <br>
-                    Marcelo Worsley, Kevin Mendoza Tudares, Tim Mwiti, Mitchell Zhen, Marc Jiang
-
-                    <div class="nav-buttons"> 
-                        <button class="block" value="papers,top" onClick="toggle(this)">Featured Projects</button>
-                        <button class="block" value="papers,special" onClick="toggle(this)">Special Mentions</button>
-                    </div>
-                </div>
-            </div>
+            </main>
         </div>
 
         <svg id="background"></svg>
