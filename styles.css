@@ -53,10 +53,6 @@ nav a:hover, nav a.curr {
     color: black;
 }
 
-img { 
-    margin: 0px 10px 0px 0px;
-}
-
 button.block { 
     margin-left: 10px;
     font-size: small;
@@ -189,6 +185,7 @@ div #contact {
 }
 
 img { 
+    margin: 0px 10px 0px 0px;
     display: inline;
     height: 150px;
     float: left;
