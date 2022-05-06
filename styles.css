@@ -58,13 +58,13 @@ img {
 }
 
 button.block { 
-    margin-left: 10px;
-    font-size: small;
+    /* margin-left: 10px;
+    font-size: small; */
     color: black;
     text-decoration: none;
-    width: fit-content;
-    height: fit-content;
-    font-weight: normal ! important;
+    display: block;
+    /* width: 100%; */
+    font-weight: bold ! important;
 }
 
 button:focus { 
@@ -94,6 +94,7 @@ button:focus {
 .transparent-row { 
     display: flex; 
     justify-content: space-between;
+    margin-top: -10px;
 }
 
 .transparent-row #place { 
@@ -101,9 +102,18 @@ button:focus {
 }
 
 .nav-buttons { 
-    display: flex; 
-    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
     align-items: flex-end;
+    border: solid 2px black;
+    background: white;
+}
+
+.nav-buttons .block { 
+    background-color: white;
+    padding: 10px;
+    font-size: larger;
+    margin-top: 0px;
 }
 
 .link-buttons a, a#note { 
@@ -163,4 +173,44 @@ div #header {
 
 div #contact { 
     width: fit-content;
+}
+
+.tab {
+    overflow: hidden;
+    z-index: 99;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: right;
+    border: none;
+    cursor: pointer;
+    padding: 7px 14px 16px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+#active {
+    background-color: #eee ! important;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    border: solid 2px black;
+    background-color: white;
+}
+
+.section {
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px;
+    font-size: larger;
 }

@@ -17,8 +17,13 @@
 
             <main role="main">
                 <div class="fadeIn" id="top">
-                    <h3 class="block">About Me</h3>
-
+                    <div class="tab"> 
+                        <div role="group" aria-labelledby="Navigation Buttons" class="nav-buttons"> 
+                            <button class="block" id="active" disabled aria-label="Already at About Me">About Me</button>
+                            <button class="block" value="top,education" onClick="toggle(this)" aria-label="Go to Education">Education</button>
+                            <button class="block" value="top,skills" onClick="toggle(this)" aria-label="Go to Skills">Skills</button>
+                        </div>
+                    </div>
                     <div class="transparent-row">
                         <div class="block"> 
                             <img src="about-picture.png" height="450" width="auto" alt=""/> 
@@ -60,19 +65,19 @@
                                         <i class="fa fa-github" aria-hidden="true"></i>
                                     </a>
                                 </div>
-
-                                <div role="group" aria-labelledby="Navigation Buttons" class="nav-buttons"> 
-                                    <button class="block" value="top,education" onClick="toggle(this)" aria-label="Go to Education">Education</button>
-                                    <button class="block" value="top,skills" onClick="toggle(this)" aria-label="Go to Skills">Skills</button>
-                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="fadeOut" id="education">
-                    <h3 class="block">Education</h3>
-
+                    <div class="tab"> 
+                        <div role="group" aria-labelledby="Navigation Buttons" class="nav-buttons"> 
+                            <button class="block" value="education,top" onClick="toggle(this)" aria-label="Go to About Me">About Me</button>
+                            <button class="block" id="active" disabled aria-label="Already at Education">Education</button>
+                            <button class="block" value="education,skills" onClick="toggle(this)" aria-label="Go to Skills">Skills</button>
+                        </div>   
+                    </div>
                     <div class="transparent-row">
                         <div class="block" id="place"> 
                             <div> <b>Northwestern University</b> (Evanston, IL.) </div>
@@ -95,18 +100,19 @@
                                     <div> Summer 2017 </div>
                                     <div> GPA: 4.00/4.00 </div>             
                                 </div>
-                                <div role="group" aria-labelledby="Navigation Buttons" class="nav-buttons"> 
-                                    <button class="block" value="education,top" onClick="toggle(this)" aria-label="Go to About Me">About Me</button>
-                                    <button class="block" value="education,skills" onClick="toggle(this)" aria-label="Go to Skills">Skills</button>
-                                </div>   
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <div class="fadeOut" id="skills">
-                    <h3 class="block">Skills</h3>
-
+                    <div class="tab"> 
+                        <div role="group" aria-labelledby="Navigation Buttons" class="nav-buttons"> 
+                            <button class="block" value="skills,top" onClick="toggle(this)" aria-label="Go to About Me">About Me</button>
+                            <button class="block" value="skills,education" onClick="toggle(this)" aria-label="Go to Education">Education</button>
+                            <button class="block" id="active" disabled aria-label="Already at Skills">Skills</button>
+                        </div>
+                    </div>
                     <div class="transparent-row">
                         <div class="block" id="place"> 
                             <div> <b>Full</b> </div>
@@ -148,10 +154,6 @@
                                         <li>AWS Lambda</li>
                                         <li>Swift</li>
                                     </ul>
-                                </div>
-                                <div role="group" aria-labelledby="Navigation Buttons" class="nav-buttons"> 
-                                    <button class="block" value="skills,top" onClick="toggle(this)" aria-label="Go to About Me">About Me</button>
-                                    <button class="block" value="skills,education" onClick="toggle(this)" aria-label="Go to Education">Education</button>
                                 </div>
                             </div>
                         </div>

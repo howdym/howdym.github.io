@@ -17,9 +17,15 @@
             <main role="main">
                 <div class=fadeIn id="top">
                     <h3 class="block">Featured Projects</h3>
-
-                    <div class="transparent-row"> 
-                        <div class="block" id="place"> 
+                    
+                    <div class="tab"> 
+                        <div role="group" aria-labelledby="Navigation Buttons" class="nav-buttons"> 
+                            <button class="block" value="top,special" onClick="toggle(this)" aria-label="Go to Special Mentions">Special Mentions</button>
+                            <button class="block" value="top,papers" onClick="toggle(this)" aria-label="Go to Papers">Papers</button>
+                        </div>
+                    </div>
+                    <div class="row"> 
+                        <div class="section" id="place"> 
                             <p>
                                 <b>Tangicraft</b>
                             </p>
@@ -57,18 +63,16 @@
                                 <a href="https://github.com/howdym/TangiCraft/tree/standarized" target="_blank" class="block" aria-label="Code to Tangicraft">Code</a>
                             </div>
                         </div>
-                        <div class="block"> 
+                        <div class="section"> 
                             <img src="tangicraft.gif" alt="Demo of Tangicraft"/>
                         </div>
                     </div>
 
-                    <br>
-
-                    <div class="transparent-row"> 
-                        <div class="block"> 
+                    <div class="row"> 
+                        <div class="section"> 
                             <img src="slackSearch.gif" alt="Demo of Slack Search"/>
                         </div>
-                        <div class="block">                                
+                        <div class="section">                                
                             <p>
                                 <b>Slack Search</b>
                             </p>
@@ -97,10 +101,6 @@
                                 <div class="link-buttons"> 
                                     <a href="https://github.com/tkkwon1998/cs338-slack-search" target="_blank" class="block" aria-label="Code to Slack Search">Code</a>
                                 </div>
-                                <div role="group" aria-labelledby="Navigation Buttons" class="nav-buttons"> 
-                                    <button class="block" value="top,special" onClick="toggle(this)" aria-label="Go to Special Mentions">Special Mentions</button>
-                                    <button class="block" value="top,papers" onClick="toggle(this)" aria-label="Go to Papers">Papers</button>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -109,6 +109,12 @@
                 <div class="fadeOut" id="special">
                     <h3 class="block">Special Mentions</h3>
 
+                    <div class="tab"> 
+                        <div role="group" aria-labelledby="Navigation Buttons" class="nav-buttons"> 
+                            <button class="block" value="special,top" onClick="toggle(this)" aria-label="Go to Featured Projects">Featured Projects</button>
+                            <button class="block" value="special,papers" onClick="toggle(this)" aria-label="Go to Papers">Papers</button>
+                        </div>
+                    </div>
                     <div class="block"> 
                         <div id="header">
                             <b>Turret Dodgeball</b>
@@ -156,10 +162,6 @@
                                 <a href="https://github.com/howdym" target="_blank" class="block" aria-label="Link to Github">See More</a>
                                 <a href="https://github.com/howdym/bikeLocator" target="_blank" class="block" aria-label="Code to Bike Locator">Code</a>
                             </div>
-                            <div role="group" aria-labelledby="Navigation Buttons" class="nav-buttons"> 
-                                <button class="block" value="special,top" onClick="toggle(this)" aria-label="Go to Featured Projects">Featured Projects</button>
-                                <button class="block" value="special,papers" onClick="toggle(this)" aria-label="Go to Papers">Papers</button>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -167,6 +169,12 @@
                 <div class="fadeOut" id="papers">
                     <h3 class="block">Papers</h3>
                     
+                    <div class="tab"> 
+                        <div role="group" aria-labelledby="Navigation Buttons" class="nav-buttons"> 
+                            <button class="block" value="papers,top" onClick="toggle(this)" aria-label="Go to Featured Projects">Featured Projects</button>
+                            <button class="block" value="papers,special" onClick="toggle(this)" aria-label="Go to Special Mentions">Special Mentions</button>
+                        </div>
+                    </div>
                     <div class="block">
                         <div id="header">
                             <b> 
@@ -177,11 +185,6 @@
                         </div>
                         <br>
                         Marcelo Worsley, Kevin Mendoza Tudares, Tim Mwiti, Mitchell Zhen, Marc Jiang
-
-                        <div role="group" aria-labelledby="Navigation Buttons" class="nav-buttons"> 
-                            <button class="block" value="papers,top" onClick="toggle(this)" aria-label="Go to Featured Projects">Featured Projects</button>
-                            <button class="block" value="papers,special" onClick="toggle(this)" aria-label="Go to Special Mentions">Special Mentions</button>
-                        </div>
                     </div>
                 </div>
             </main>
