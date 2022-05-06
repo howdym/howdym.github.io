@@ -54,7 +54,7 @@ nav a:hover, nav a.curr {
 }
 
 img { 
-    margin: 0px 10px 0px 10px;
+    margin: 0px 10px 0px 0px;
 }
 
 button.block { 
@@ -62,16 +62,19 @@ button.block {
     font-size: small;
     color: black;
     text-decoration: none;
-    width: fit-content;
-    height: fit-content;
     font-weight: normal ! important;
+}
+
+button.active { 
+    background-color: #ccc;
+    box-shadow: none ! important;
 }
 
 button:focus { 
     outline: none ! important;
 }
 
-.content { 
+.all-content { 
     position: relative;
     z-index: 99;
     margin: 0 auto;
@@ -91,6 +94,19 @@ button:focus {
     transition: all 0.2s linear;  
 }
 
+.content-plus-sidebar { 
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    display: grid;
+    grid-template-columns: 12.5% 75% 12.5%;
+    grid-template-areas: "nav-buttons content .";
+    align-items: start;
+}
+
 .transparent-row { 
     display: flex; 
     justify-content: space-between;
@@ -101,9 +117,11 @@ button:focus {
 }
 
 .nav-buttons { 
-    display: flex; 
-    justify-content: flex-end;
-    align-items: flex-end;
+    display: flex;
+    float: left;
+    flex-direction: column;
+    width: fit-content;
+    justify-self: center;
 }
 
 .link-buttons a, a#note { 
@@ -163,4 +181,20 @@ div #header {
 
 div #contact { 
     width: fit-content;
+}
+
+.content { 
+    width: 98%;
+    justify-self: center;
+}
+
+img { 
+    display: inline;
+    height: 150px;
+    float: left;
+}
+
+#right-image { 
+    float: right;
+    margin: 0px 0px 0px 10px;
 }
